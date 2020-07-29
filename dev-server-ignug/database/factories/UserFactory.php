@@ -19,7 +19,7 @@ use Faker\Generator as Faker;
 $factory->define(User::class, function (Faker $faker) {
     return [
 
-        'ethnic_origin_id' =>   ,
+        'ethnic_origin_id' => random_int(31, 38),
         'location_id' => 62,
         'identification_type_id' => random_int(44, 45),
         'identification' => $faker->numberBetween($min = 1000000000, $max = 9999999999),

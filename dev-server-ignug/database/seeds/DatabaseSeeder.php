@@ -498,12 +498,16 @@ class DatabaseSeeder extends Seeder
             'state_id' => 1,
         ]);
 
-       factory(App\User::class, 100)->create();
+        factory(App\User::class, 100)->create();
         factory(App\Models\Company::class, 100)->create();
         factory(App\Models\Offer::class, 100)->create();
         factory(App\Models\Course::class, 100)->create();
         factory(App\Models\AcademicFormation::class, 100)->create();
         factory(App\Models\Professional::class, 100)->create();
+        factory(App\Models\ProfessionalExperience::class, 100)->create();
+        factory(App\Models\ProfessionalReference::class, 100)->create();
+        factory(App\Models\Language::class, 20)->create();
+        factory(App\Models\Ability::class, 10)->create();
 
 
     }
